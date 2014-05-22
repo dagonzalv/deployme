@@ -1,0 +1,809 @@
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile10.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile10.secure -deploy -name FillOrderWeb -source /opt/apps/nxtcomp/201201240039/FillOrderWeb.war -targets clust01 -stage
+<Jan 24, 2012 4:16:05 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, FillOrderWeb [archive: /opt/apps/nxtcomp/201201240039/FillOrderWeb.war], to clust01 .> 
+Task 37 initiated: [Deployer:149026]deploy application FillOrderWeb on clust01.
+Task 37 deferred: [Deployer:149026]deploy application FillOrderWeb on clust01.
+Target state: deploy deferred on Cluster clust01
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmsoe01'. Deployment is deferred until 'svmsoe01' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmsoe02'. Deployment is deferred until 'svmsoe02' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile10.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile10.secure -undeploy -name FillOrderWeb
+<Jan 24, 2012 4:17:15 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 38 initiated: [Deployer:149026]remove application FillOrderWeb on clust01.
+Task 38 deferred: [Deployer:149026]remove application FillOrderWeb on clust01.
+Target state: undeploy deferred on Cluster clust01
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmsoe01'. Deployment is deferred until 'svmsoe01' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmsoe02'. Deployment is deferred until 'svmsoe02' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile10.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile10.secure -deploy -name FillOrderWeb -source /opt/apps/nxtcomp/201201240039/FillOrderWeb.war -targets clust02 -stage
+<Jan 24, 2012 4:17:55 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, FillOrderWeb [archive: /opt/apps/nxtcomp/201201240039/FillOrderWeb.war], to clust02 .> 
+Task 39 initiated: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Task 39 deferred: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Target state: deploy deferred on Cluster clust02
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmnoe02'. Deployment is deferred until 'svmnoe02' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:7101 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile10.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile10.secure -stop -name siscob.war
+Unable to connect to 't3://10.103.12.151:7101': User: admin, failed to be authenticated.. Ensure the url represents a running admin server and that the credentials are correct. If using http protocol, tunneling must be enabled on the admin server.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:7101 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile9.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile9.secure -stop -name siscob.war
+<Jan 24, 2012 4:20:10 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, siscob.war [archive: null], to configured targets.> 
+Task 11 initiated: [Deployer:149026]stop application siscob.war on svmsco01.
+Task 11 completed: [Deployer:149026]stop application siscob.war on svmsco01.
+Target state: stop completed on Server svmsco01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.151:7101 -userconfigfile /opt/apps/deployme/keys/myuserconfigfile9.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyfile9.secure -start -name siscob.war
+<Jan 24, 2012 4:20:24 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, siscob.war [archive: null], to configured targets.> 
+Task 12 initiated: [Deployer:149026]start application siscob.war on svmsco01.
+Task 12 completed: [Deployer:149026]start application siscob.war on svmsco01.
+Target state: start completed on Server svmsco01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name GuiPrepago
+<Feb 8, 2012 12:12:52 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 8 initiated: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Task 8 completed: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Target state: stop completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name GuiPrepago
+<Feb 8, 2012 12:13:41 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 9 initiated: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Task 9 completed: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Target state: start completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name GuiPrepago
+<Feb 8, 2012 1:30:31 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 10 initiated: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Task 10 completed: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Target state: stop completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name GuiPrepago
+<Feb 8, 2012 1:30:48 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 11 initiated: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Task 11 completed: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Target state: start completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name GuiPrepago
+<Feb 8, 2012 1:32:17 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 12 initiated: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Task 12 completed: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Target state: stop completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name GuiPrepago
+<Feb 8, 2012 1:32:33 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 13 initiated: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Task 13 completed: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Target state: start completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name GuiPrepago
+<Feb 8, 2012 1:40:21 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 14 initiated: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Task 14 completed: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Target state: stop completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /keys/pwdWLSNXT.secure -start -name GuiPrepago
+Enter a password for the user "installadministrator":weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name GuiPrepago
+<Feb 8, 2012 1:44:37 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 15 initiated: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Task 15 completed: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Target state: start completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name GuiPrepago
+<Feb 8, 2012 3:42:51 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 16 initiated: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Task 16 completed: [Deployer:149026]stop application GuiPrepago on svmprepa01.
+Target state: stop completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name GuiPrepago
+<Feb 8, 2012 3:43:16 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, GuiPrepago [archive: null], to configured targets.> 
+Task 17 initiated: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Task 17 completed: [Deployer:149026]start application GuiPrepago on svmprepa01.
+Target state: start completed on Server svmprepa01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name siscob
+<Feb 8, 2012 3:52:08 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, siscob [archive: null], to configured targets.> 
+Task 18 initiated: [Deployer:149026]stop application siscob on SCOIXClust.
+Task 18 completed: [Deployer:149026]stop application siscob on SCOIXClust.
+Target state: stop completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name siscob
+<Feb 8, 2012 3:53:06 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, siscob [archive: null], to configured targets.> 
+Task 19 initiated: [Deployer:149026]start application siscob on SCOIXClust.
+Task 19 completed: [Deployer:149026]start application siscob on SCOIXClust.
+Target state: start completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -stop -name ShotsOnLineApp
+<Feb 8, 2012 4:10:50 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 0 initiated: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Task 0 failed: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Target state: stop running on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -stop -name ShotsOnLineApp
+<Feb 8, 2012 4:13:21 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 1 initiated: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Task 1 completed: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Target state: stop completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -start -name ShotsOnLineApp
+<Feb 8, 2012 4:20:52 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 2 initiated: [Deployer:149026]start application ShotsOnLineApp on svmSHOTSuat.
+Task 2 completed: [Deployer:149026]start application ShotsOnLineApp on svmSHOTSuat.
+Target state: start completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name ppdv-ws
+<Feb 8, 2012 4:24:18 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, ppdv-ws [archive: null], to configured targets.> 
+Task 20 initiated: [Deployer:149026]stop application ppdv-ws on clustPDV.
+Task 20 completed: [Deployer:149026]stop application ppdv-ws on clustPDV.
+Target state: stop completed on Cluster clustPDV
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name ppdv-ws
+<Feb 8, 2012 4:26:15 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, ppdv-ws [archive: null], to configured targets.> 
+Task 21 initiated: [Deployer:149026]start application ppdv-ws on clustPDV.
+Task 21 completed: [Deployer:149026]start application ppdv-ws on clustPDV.
+Target state: start completed on Cluster clustPDV
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -stop -name ShotsOnLineApp
+<Feb 8, 2012 11:13:24 PM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 3 initiated: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Task 3 completed: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Target state: stop completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -start -name ShotsOnLineApp
+<Feb 8, 2012 11:14:02 PM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 4 initiated: [Deployer:149026]start application ShotsOnLineApp on svmSHOTSuat.
+Task 4 completed: [Deployer:149026]start application ShotsOnLineApp on svmSHOTSuat.
+Target state: start completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -undeploy -name ShotsOnLineApp
+<Feb 9, 2012 1:00:58 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -stop -name ShotsOnLineApp
+<Feb 9, 2012 1:02:30 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 6 initiated: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Task 6 completed: [Deployer:149026]stop application ShotsOnLineApp on svmSHOTSuat.
+Target state: stop completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -undeploy -name ShotsOnLineApp
+<Feb 9, 2012 1:04:11 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -deploy -name ShotsOnLineApp -source /opt/apps/nxtcomp/shotsonline/201202082316/ShotsOnLineApp.ear -targets svmSHOTSuat \ -stage
+The file list is not allowed for this operation if source is specified.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -deploy -name ShotsOnLineApp -source /opt/apps/nxtcomp/shotsonline/201202082316/ShotsOnLineApp.ear -targets svmSHOTSuat -stage
+<Feb 9, 2012 1:25:59 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, ShotsOnLineApp [archive: /opt/apps/nxtcomp/shotsonline/201202082316/ShotsOnLineApp.ear], to svmSHOTSuat .> 
+Task 10 initiated: [Deployer:149026]deploy application ShotsOnLineApp on svmSHOTSuat.
+Task 10 completed: [Deployer:149026]deploy application ShotsOnLineApp on svmSHOTSuat.
+Target state: deploy completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -undeploy -name ShotsOnLineApp
+<Feb 9, 2012 1:26:56 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, ShotsOnLineApp [archive: null], to configured targets.> 
+Task 11 initiated: [Deployer:149026]remove application ShotsOnLineApp on svmSHOTSuat.
+Task 11 completed: [Deployer:149026]remove application ShotsOnLineApp on svmSHOTSuat.
+Target state: undeploy completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:9301 -userconfigfile /opt/apps/deployme/keys/userWLSSHOTS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSSHOTS.secure -deploy -name ShotsOnLineApp -source /opt/apps/nxtcomp/shotsonline/201202082316/ShotsOnLineApp.ear -targets svmSHOTSuat -stage
+<Feb 9, 2012 1:27:28 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, ShotsOnLineApp [archive: /opt/apps/nxtcomp/shotsonline/201202082316/ShotsOnLineApp.ear], to svmSHOTSuat .> 
+Task 12 initiated: [Deployer:149026]deploy application ShotsOnLineApp on svmSHOTSuat.
+Task 12 completed: [Deployer:149026]deploy application ShotsOnLineApp on svmSHOTSuat.
+Target state: deploy completed on Server svmSHOTSuat
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7101 -userconfigfile /opt/apps/deployme/keys/userWLSPIS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSPIS.secure -stop -name Pis
+<Feb 9, 2012 1:51:01 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, Pis [archive: null], to configured targets.> 
+Task 4 initiated: [Deployer:149026]stop application Pis on svmpisweb.
+Task 4 completed: [Deployer:149026]stop application Pis on svmpisweb.
+Target state: stop completed on Server svmpisweb
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7101 -userconfigfile /opt/apps/deployme/keys/userWLSPIS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSPIS.secure -undeploy -name Pis
+<Feb 9, 2012 1:51:28 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, Pis [archive: null], to configured targets.> 
+Task 5 initiated: [Deployer:149026]remove application Pis on svmpisweb.
+Task 5 completed: [Deployer:149026]remove application Pis on svmpisweb.
+Target state: undeploy completed on Server svmpisweb
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7101 -userconfigfile /opt/apps/deployme/keys/userWLSPIS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSPIS.secure -deploy -name Pis -source /opt/apps/nxtcomp/PisWeb/201202081535/Pis.war -targets svmpisweb \ -stage
+The file list is not allowed for this operation if source is specified.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7101 -userconfigfile /opt/apps/deployme/keys/userWLSPIS.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSPIS.secure -deploy -name Pis -source /opt/apps/nxtcomp/PisWeb/201202081535/Pis.war -targets svmpisweb -stage
+<Feb 9, 2012 1:54:34 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, Pis [archive: /opt/apps/nxtcomp/PisWeb/201202081535/Pis.war], to svmpisweb .> 
+Task 6 initiated: [Deployer:149026]deploy application Pis on svmpisweb.
+Task 6 completed: [Deployer:149026]deploy application Pis on svmpisweb.
+Target state: deploy completed on Server svmpisweb
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name siscob
+<Feb 29, 2012 12:17:33 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, siscob [archive: null], to configured targets.> 
+Task 4 initiated: [Deployer:149026]stop application siscob on SCOIXClust.
+Task 4 failed: [Deployer:149026]stop application siscob on SCOIXClust.
+Target state: stop running on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name siscob
+<Feb 29, 2012 12:23:10 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, siscob [archive: null], to configured targets.> 
+Task 5 initiated: [Deployer:149026]stop application siscob on SCOIXClust.
+Task 5 deferred: [Deployer:149026]stop application siscob on SCOIXClust.
+Target state: stop deferred on Cluster SCOIXClust
+[Deployer:149145]Unable to contact 'svmsco02'. Deployment is deferred until 'svmsco02' becomes available.
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name siscob
+<Feb 29, 2012 12:26:13 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, siscob [archive: null], to configured targets.> 
+Task 6 initiated: [Deployer:149026]stop application siscob on SCOIXClust.
+Task 6 completed: [Deployer:149026]stop application siscob on SCOIXClust.
+Target state: stop completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -start -name siscob
+<Feb 29, 2012 12:26:47 AM CST> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, siscob [archive: null], to configured targets.> 
+Task 7 initiated: [Deployer:149026]start application siscob on SCOIXClust.
+Task 7 completed: [Deployer:149026]start application siscob on SCOIXClust.
+Target state: start completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -stop -name CobranzaDespachos
+<Mar 19, 2012 11:08:59 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, CobranzaDespachos [archive: null], to configured targets.> 
+Task 0 initiated: [Deployer:149026]stop application CobranzaDespachos on SCOIXClust.
+Task 0 completed: [Deployer:149026]stop application CobranzaDespachos on SCOIXClust.
+Target state: stop completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -undeploy -name CobranzaDespachos
+<Mar 19, 2012 11:10:42 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, CobranzaDespachos [archive: null], to configured targets.> 
+Task 1 initiated: [Deployer:149026]remove application CobranzaDespachos on SCOIXClust.
+Task 1 completed: [Deployer:149026]remove application CobranzaDespachos on SCOIXClust.
+Target state: undeploy completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -deploy -name CobranzaDespachos -source /opt/apps/nxtcomp/siscob/201110071430/CobranzaDespachos.war -targets SCOIXClust -stage
+<Mar 19, 2012 11:16:21 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, CobranzaDespachos [archive: /opt/apps/nxtcomp/siscob/201110071430/CobranzaDespachos.war], to SCOIXClust .> 
+Task 2 initiated: [Deployer:149026]deploy application CobranzaDespachos on SCOIXClust.
+Task 2 completed: [Deployer:149026]deploy application CobranzaDespachos on SCOIXClust.
+Target state: deploy completed on Cluster SCOIXClust
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -undeploy -name xmlReceiptEAR
+<Mar 20, 2012 3:25:06 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, xmlReceiptEAR [archive: null], to configured targets.> 
+Task 3 initiated: [Deployer:149026]remove application xmlReceiptEAR on svmrenaut01.
+Task 3 completed: [Deployer:149026]remove application xmlReceiptEAR on svmrenaut01.
+Target state: undeploy completed on Server svmrenaut01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.144:7001 -userconfigfile /opt/apps/deployme/keys/userWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/pwdWLSNXT.secure -deploy -name xmlReceiptEAR -source /opt/apps/nxtcomp/olb/xmlReceiptEAR.ear -targets svmrenaut01 -stage
+<Mar 20, 2012 3:26:23 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, xmlReceiptEAR [archive: /opt/apps/nxtcomp/olb/201203201420/xmlReceiptEAR.ear], to svmrenaut01 .> 
+Task 4 initiated: [Deployer:149026]deploy application xmlReceiptEAR on svmrenaut01.
+Task 4 completed: [Deployer:149026]deploy application xmlReceiptEAR on svmrenaut01.
+Target state: deploy completed on Server svmrenaut01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb.war
+<Apr 17, 2012 1:02:59 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb.war [archive: null], to configured targets.> 
+[Deployer:149001]No application named 'FillOrderWeb.war' exists for operation stop
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+<Apr 17, 2012 1:03:36 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 8 initiated: [Deployer:149026]stop application FillOrderWeb on clust02.
+Task 8 completed: [Deployer:149026]stop application FillOrderWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 17, 2012 1:03:51 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 9 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 9 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -undeploy -name FillOrderWeb
+<Apr 18, 2012 9:36:44 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 10 initiated: [Deployer:149026]remove application FillOrderWeb on clust02.
+Task 10 completed: [Deployer:149026]remove application FillOrderWeb on clust02.
+Target state: undeploy completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -deploy -name FillOrderWeb -source /opt/apps/nxtcomp/201203291245/FillOrderWeb.war -targets clust02 -stage
+<Apr 18, 2012 9:43:10 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, FillOrderWeb [archive: /opt/apps/nxtcomp/201203291245/FillOrderWeb.war], to clust02 .> 
+Task 11 initiated: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Task 11 completed: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Target state: deploy completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3:// -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+java.net.URISyntaxException: Expected authority at index 5: t3://
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+<Apr 18, 2012 2:47:11 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 12 initiated: [Deployer:149026]stop application FillOrderWeb on clust02.
+Task 12 completed: [Deployer:149026]stop application FillOrderWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 18, 2012 2:47:41 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 13 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 13 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile -userkeyfile -stop -name FillOrderWeb
+Please enter username:weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile -userkeyfile -stop -name FillOrderWeb
+Please enter username:weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+<Apr 18, 2012 2:52:42 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 14 initiated: [Deployer:149026]stop application FillOrderWeb on clust02.
+Task 14 completed: [Deployer:149026]stop application FillOrderWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 18, 2012 2:52:59 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 15 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 15 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name RenautWeb
+<Apr 18, 2012 2:59:39 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 16 initiated: [Deployer:149026]stop application RenautWeb on clust02.
+Task 16 completed: [Deployer:149026]stop application RenautWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name RenautWeb
+<Apr 18, 2012 3:00:41 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 17 initiated: [Deployer:149026]start application RenautWeb on clust02.
+Task 17 completed: [Deployer:149026]start application RenautWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name RenautWeb
+<Apr 18, 2012 3:02:20 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 18 initiated: [Deployer:149026]start application RenautWeb on clust02.
+Task 18 completed: [Deployer:149026]start application RenautWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:7010 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNEXINDE.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNEXINDE.secure -start -name RenautWeb
+<Apr 18, 2012 3:03:46 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 0 initiated: [Deployer:149026]start application RenautWeb on adminNexinde.
+Task 0 completed: [Deployer:149026]start application RenautWeb on adminNexinde.
+Target state: start completed on Server adminNexinde
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:7010 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNEXINDE.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNEXINDE.secure -stop -name RenautWeb
+<Apr 18, 2012 3:04:11 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 1 initiated: [Deployer:149026]stop application RenautWeb on adminNexinde.
+Task 1 completed: [Deployer:149026]stop application RenautWeb on adminNexinde.
+Target state: stop completed on Server adminNexinde
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:7010 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNEXINDE.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNEXINDE.secure -start -name RenautWeb
+<Apr 18, 2012 3:04:33 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, RenautWeb [archive: null], to configured targets.> 
+Task 2 initiated: [Deployer:149026]start application RenautWeb on adminNexinde.
+Task 2 completed: [Deployer:149026]start application RenautWeb on adminNexinde.
+Target state: start completed on Server adminNexinde
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+<Apr 19, 2012 9:26:29 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 19 initiated: [Deployer:149026]stop application FillOrderWeb on clust02.
+Task 19 completed: [Deployer:149026]stop application FillOrderWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 19, 2012 9:27:26 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 20 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 20 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -undeploy -name FillOrderWeb
+<Apr 19, 2012 9:27:57 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 21 initiated: [Deployer:149026]remove application FillOrderWeb on clust02.
+Task 21 completed: [Deployer:149026]remove application FillOrderWeb on clust02.
+Target state: undeploy completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -deploy -name FillOrderWeb -source /opt/apps/nxtcomp/201203291245/FillOrderWeb.war -targets clust02 -stage
+<Apr 19, 2012 9:29:07 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, FillOrderWeb [archive: /opt/apps/nxtcomp/201203291245/FillOrderWeb.war], to clust02 .> 
+Task 22 initiated: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Task 22 completed: [Deployer:149026]deploy application FillOrderWeb on clust02.
+Target state: deploy completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name FillOrderWeb
+<Apr 19, 2012 9:52:15 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 23 initiated: [Deployer:149026]stop application FillOrderWeb on clust02.
+Task 23 completed: [Deployer:149026]stop application FillOrderWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name CartaRTFWeb
+<Apr 19, 2012 9:52:21 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, CartaRTFWeb [archive: null], to configured targets.> 
+Task 24 initiated: [Deployer:149026]stop application CartaRTFWeb on clust02.
+Task 24 completed: [Deployer:149026]stop application CartaRTFWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name scv
+<Apr 19, 2012 9:52:29 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, scv [archive: null], to configured targets.> 
+Task 25 initiated: [Deployer:149026]stop application scv on clust02.
+Task 25 completed: [Deployer:149026]stop application scv on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 19, 2012 9:53:07 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 26 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 26 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name CartaRTFWeb
+<Apr 19, 2012 9:53:15 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, CartaRTFWeb [archive: null], to configured targets.> 
+Task 27 initiated: [Deployer:149026]start application CartaRTFWeb on clust02.
+Task 27 completed: [Deployer:149026]start application CartaRTFWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name scv
+<Apr 19, 2012 9:53:22 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, scv [archive: null], to configured targets.> 
+Task 28 initiated: [Deployer:149026]start application scv on clust02.
+Task 28 completed: [Deployer:149026]start application scv on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name FillOrderWeb
+<Apr 19, 2012 9:56:33 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, FillOrderWeb [archive: null], to configured targets.> 
+Task 30 initiated: [Deployer:149026]start application FillOrderWeb on clust02.
+Task 30 completed: [Deployer:149026]start application FillOrderWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name CartaRTFWeb
+<Apr 19, 2012 9:56:41 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, CartaRTFWeb [archive: null], to configured targets.> 
+Task 31 initiated: [Deployer:149026]stop application CartaRTFWeb on clust02.
+Task 31 completed: [Deployer:149026]stop application CartaRTFWeb on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -stop -name scv
+<Apr 19, 2012 9:56:47 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating stop operation for application, scv [archive: null], to configured targets.> 
+Task 32 initiated: [Deployer:149026]stop application scv on clust02.
+Task 32 completed: [Deployer:149026]stop application scv on clust02.
+Target state: stop completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name CartaRTFWeb
+<Apr 19, 2012 9:58:00 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, CartaRTFWeb [archive: null], to configured targets.> 
+Task 33 initiated: [Deployer:149026]start application CartaRTFWeb on clust02.
+Task 33 completed: [Deployer:149026]start application CartaRTFWeb on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.44:9001 -userconfigfile /opt/apps/deployme/keys/myuserconfigWLSNXT.secure -userkeyfile /opt/apps/deployme/keys/myuserkeyWLSNXT.secure -start -name scv
+<Apr 19, 2012 9:58:06 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating start operation for application, scv [archive: null], to configured targets.> 
+Task 34 initiated: [Deployer:149026]start application scv on clust02.
+Task 34 completed: [Deployer:149026]start application scv on clust02.
+Target state: start completed on Cluster clust02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name FillOrderWeb -source /opt/apps/corefiles/components/noe/FillOrderWeb.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 12:27:36 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, FillOrderWeb [archive: /opt/apps/corefiles/components/noe/FillOrderWeb.war], to svmnoe02 svmnoe03 svmnoe01 svmnoe04 .> 
+Task 0 initiated: [Deployer:149026]deploy application FillOrderWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 0 completed: [Deployer:149026]deploy application FillOrderWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name seguridad -source /opt/apps/corefiles/components/noe/seguridad.ear -targets svmmau01 -stage
+<Apr 22, 2013 1:07:34 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, seguridad [archive: /opt/apps/corefiles/components/noe/seguridad.ear], to svmmau01 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed. If you are using "Automatically Aquire Lock and Activate Changes" in the console, then the lock will expire shortly so retry this operation.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name MktIX -source /opt/apps/corefiles/components/noe/MktIX.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:09:22 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, MktIX [archive: /opt/apps/corefiles/components/noe/MktIX.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed. If you are using "Automatically Aquire Lock and Activate Changes" in the console, then the lock will expire shortly so retry this operation.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name MktIX -source /opt/apps/corefiles/components/noe/MktIX.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:10:04 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, MktIX [archive: /opt/apps/corefiles/components/noe/MktIX.war], to svmnoe01 svmnoe04 svmnoe02 svmnoe03 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed. If you are using "Automatically Aquire Lock and Activate Changes" in the console, then the lock will expire shortly so retry this operation.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name MktIX -source /opt/apps/corefiles/components/noe/MktIX.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:11:09 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, MktIX [archive: /opt/apps/corefiles/components/noe/MktIX.war], to svmnoe02 svmnoe03 svmnoe01 svmnoe04 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed. If you are using "Automatically Aquire Lock and Activate Changes" in the console, then the lock will expire shortly so retry this operation.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name MktIX -source /opt/apps/corefiles/components/noe/MktIX.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:13:00 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, MktIX [archive: /opt/apps/corefiles/components/noe/MktIX.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+Task 5 initiated: [Deployer:149026]deploy application MktIX on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 5 completed: [Deployer:149026]deploy application MktIX on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name NexInde -source /opt/apps/corefiles/components/noe/NexInde.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:22:44 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, NexInde [archive: /opt/apps/corefiles/components/noe/NexInde.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+Task 6 initiated: [Deployer:149026]deploy application NexInde on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 6 completed: [Deployer:149026]deploy application NexInde on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name NOEMovilServices -source /opt/apps/corefiles/components/noe/NOEMovilServices.war -targets clust01 -stage
+<Apr 22, 2013 1:22:52 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, NOEMovilServices [archive: /opt/apps/corefiles/components/noe/NOEMovilServices.war], to clust01 .> 
+Task 7 initiated: [Deployer:149026]deploy application NOEMovilServices on clust01.
+Task 7 completed: [Deployer:149026]deploy application NOEMovilServices on clust01.
+Target state: deploy completed on Cluster clust01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name NOEMovil -source /opt/apps/corefiles/components/noe/NOEMovil.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:23:03 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, NOEMovil [archive: /opt/apps/corefiles/components/noe/NOEMovil.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+Task 8 initiated: [Deployer:149026]deploy application NOEMovil on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 8 completed: [Deployer:149026]deploy application NOEMovil on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name NOEReports -source /opt/apps/corefiles/components/noe/NOEReports.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:23:11 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, NOEReports [archive: /opt/apps/corefiles/components/noe/NOEReports.war], to svmnoe01 svmnoe04 svmnoe02 svmnoe03 .> 
+Task 9 initiated: [Deployer:149026]deploy application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 9 completed: [Deployer:149026]deploy application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name RenautWeb -source /opt/apps/corefiles/components/noe/RenautWeb.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:23:22 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, RenautWeb [archive: /opt/apps/corefiles/components/noe/RenautWeb.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+Task 10 initiated: [Deployer:149026]deploy application RenautWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 10 completed: [Deployer:149026]deploy application RenautWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name scv -source /opt/apps/corefiles/components/noe/scv.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:23:30 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, scv [archive: /opt/apps/corefiles/components/noe/scv.war], to svmnoe03 svmnoe04 svmnoe01 svmnoe02 .> 
+Task 11 initiated: [Deployer:149026]deploy application scv on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 11 completed: [Deployer:149026]deploy application scv on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name seguridad -source /opt/apps/corefiles/components/noe/seguridad.ear -targets svmmau01 -stage
+<Apr 22, 2013 1:23:39 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, seguridad [archive: /opt/apps/corefiles/components/noe/seguridad.ear], to svmmau01 .> 
+Task 12 initiated: [Deployer:149026]deploy application seguridad on svmmau01.
+Task 12 completed: [Deployer:149026]deploy application seguridad on svmmau01.
+Target state: deploy completed on Server svmmau01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name ServiciosASP -source /opt/apps/corefiles/components/noe/ServiciosASP.war -targets clust01 -stage
+<Apr 22, 2013 1:23:55 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, ServiciosASP [archive: /opt/apps/corefiles/components/noe/ServiciosASP.war], to clust01 .> 
+Task 13 initiated: [Deployer:149026]deploy application ServiciosASP on clust01.
+Task 13 completed: [Deployer:149026]deploy application ServiciosASP on clust01.
+Target state: deploy completed on Cluster clust01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name ServiciosBC -source /opt/apps/corefiles/components/noe/ServiciosBC.war -targets clust01 -stage
+<Apr 22, 2013 1:25:33 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, ServiciosBC [archive: /opt/apps/corefiles/components/noe/ServiciosBC.war], to clust01 .> 
+Task 14 initiated: [Deployer:149026]deploy application ServiciosBC on clust01.
+Task 14 completed: [Deployer:149026]deploy application ServiciosBC on clust01.
+Target state: deploy completed on Cluster clust01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name ServiciosOE -source /opt/apps/corefiles/components/noe/ServiciosOE.war -targets clust01 -stage
+<Apr 22, 2013 1:25:44 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, ServiciosOE [archive: /opt/apps/corefiles/components/noe/ServiciosOE.war], to clust01 .> 
+Task 15 initiated: [Deployer:149026]deploy application ServiciosOE on clust01.
+Task 15 completed: [Deployer:149026]deploy application ServiciosOE on clust01.
+Target state: deploy completed on Cluster clust01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name InvestigacionCampo -source /opt/apps/corefiles/components/noe/InvestigacionCampo.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:25:58 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, InvestigacionCampo [archive: /opt/apps/corefiles/components/noe/InvestigacionCampo.war], to svmnoe01 svmnoe04 svmnoe02 svmnoe03 .> 
+Task 16 initiated: [Deployer:149026]deploy application InvestigacionCampo on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 16 completed: [Deployer:149026]deploy application InvestigacionCampo on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name CPCWeb -source /opt/apps/corefiles/components/noe/CPCWeb.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<Apr 22, 2013 1:26:08 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, CPCWeb [archive: /opt/apps/corefiles/components/noe/CPCWeb.war], to svmnoe02 svmnoe03 svmnoe01 svmnoe04 .> 
+Task 17 initiated: [Deployer:149026]deploy application CPCWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 17 completed: [Deployer:149026]deploy application CPCWeb on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets -stage
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:15:29 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob02 svmsiscob01 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:23:14 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob01 svmsiscob02 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:25:24 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob02 svmsiscob01 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:29:47 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob02 svmsiscob01 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+Usage: java weblogic.Deployer [options] [action] [Deployment units(s)]
+
+where options include:
+    -help             Print the standard usage message.            
+    -version          Print version information.                   
+    -adminurl <<protocol>://<server>:<port>> [option] Administration     
+                      server URL: default t3://localhost:7001      
+    -username <username> [option] user name                           
+    -password <password> [option] password for the user               
+    -userconfigfile <userconfigfile> [option] The user config file       
+                      contains the user security credentials; it   
+                      is administered by the weblogic.Admin tool   
+    -userkeyfile <keyConfigFile> [option] The users key file; it is      
+                      administered by the weblogic.Admin tool.     
+    -distribute       [action] Distribute application to the       
+                      targets.                                     
+    -start            [action] Makes an already distributed        
+                      application available on a target.           
+    -stop             [action] Makes an application unavailable on 
+                      targets.                                     
+    -redeploy         [action] Replace a running application       
+                      partially or entirely.                       
+    -undeploy         [action] Take an application out of service. 
+    -deploy           [action] Make an application available for   
+                      service.                                     
+    -update           [action] Update an application configuration 
+                      in place.                                    
+    -examples         [option] Displays example usage of this tool.
+    -name <application name> [option] Defaults to the basename of the    
+                      deployment file or directory.                
+    -targets <<target(s)>> [option] A comma separated list of targets   
+                      for the current operation. If not specified, 
+                      all configured targets are used. For a new   
+                      application, the default target is the       
+                      administration server.                       
+    -plan <Deployment plan path> [option] Specifies location of          
+                      deployment plan                              
+    -library          [option] Indicates that the unit being       
+                      deployed is a library. This option is        
+                      required when the application is a library.  
+    -advanced         Print advanced usage options.                
+
+The optional trailing arguments are deployment units and may 
+represent the archive being deployed, the name of a previously 
+deployed application or a list of files for a partial redeploy operation.
+Unrecognized option or flag, -usenonexclusivelock='true'
+Usage: java weblogic.Deployer [options] [action] [Deployment units(s)]
+
+where options include:
+    -help             Print the standard usage message.            
+    -version          Print version information.                   
+    -adminurl <<protocol>://<server>:<port>> [option] Administration     
+                      server URL: default t3://localhost:7001      
+    -username <username> [option] user name                           
+    -password <password> [option] password for the user               
+    -userconfigfile <userconfigfile> [option] The user config file       
+                      contains the user security credentials; it   
+                      is administered by the weblogic.Admin tool   
+    -userkeyfile <keyConfigFile> [option] The users key file; it is      
+                      administered by the weblogic.Admin tool.     
+    -distribute       [action] Distribute application to the       
+                      targets.                                     
+    -start            [action] Makes an already distributed        
+                      application available on a target.           
+    -stop             [action] Makes an application unavailable on 
+                      targets.                                     
+    -redeploy         [action] Replace a running application       
+                      partially or entirely.                       
+    -undeploy         [action] Take an application out of service. 
+    -deploy           [action] Make an application available for   
+                      service.                                     
+    -update           [action] Update an application configuration 
+                      in place.                                    
+    -examples         [option] Displays example usage of this tool.
+    -name <application name> [option] Defaults to the basename of the    
+                      deployment file or directory.                
+    -targets <<target(s)>> [option] A comma separated list of targets   
+                      for the current operation. If not specified, 
+                      all configured targets are used. For a new   
+                      application, the default target is the       
+                      administration server.                       
+    -plan <Deployment plan path> [option] Specifies location of          
+                      deployment plan                              
+    -library          [option] Indicates that the unit being       
+                      deployed is a library. This option is        
+                      required when the application is a library.  
+    -advanced         Print advanced usage options.                
+
+The optional trailing arguments are deployment units and may 
+represent the archive being deployed, the name of a previously 
+deployed application or a list of files for a partial redeploy operation.
+Unrecognized option or flag, -usenonexclusivelock='true'
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:49:32 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob01 svmsiscob02 .> 
+[Deployer:149163]The domain edit lock is owned by another session in non-exclusive mode - this deployment operation requires exclusive access to the edit lock and hence cannot proceed.
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name siscob -source /opt/apps/corefiles/components/siscob/siscob.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 09:55:39 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, siscob [archive: /opt/apps/corefiles/components/siscob/siscob.war], to svmsiscob02 svmsiscob01 .> 
+Task 2 initiated: [Deployer:149026]deploy application siscob on svmsiscob01,svmsiscob02.
+Task 2 completed: [Deployer:149026]deploy application siscob on svmsiscob01,svmsiscob02.
+Target state: deploy completed on Server svmsiscob01
+Target state: deploy completed on Server svmsiscob02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name SiscobDesp -source /opt/apps/corefiles/components/siscob/SiscobDesp.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 10:00:43 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, SiscobDesp [archive: /opt/apps/corefiles/components/siscob/SiscobDesp.war], to svmsiscob01 svmsiscob02 .> 
+Task 3 initiated: [Deployer:149026]deploy application SiscobDesp on svmsiscob01,svmsiscob02.
+Task 3 completed: [Deployer:149026]deploy application SiscobDesp on svmsiscob01,svmsiscob02.
+Target state: deploy completed on Server svmsiscob01
+Target state: deploy completed on Server svmsiscob02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name SiscobIIIReportes -source /opt/apps/corefiles/components/siscob/SiscobIIIReportes.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 10:00:54 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, SiscobIIIReportes [archive: /opt/apps/corefiles/components/siscob/SiscobIIIReportes.war], to svmsiscob01 svmsiscob02 .> 
+Task 4 initiated: [Deployer:149026]deploy application SiscobIIIReportes on svmsiscob01,svmsiscob02.
+Task 4 completed: [Deployer:149026]deploy application SiscobIIIReportes on svmsiscob01,svmsiscob02.
+Target state: deploy completed on Server svmsiscob01
+Target state: deploy completed on Server svmsiscob02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name SiscobRep -source /opt/apps/corefiles/components/siscob/SiscobRep.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 10:01:02 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, SiscobRep [archive: /opt/apps/corefiles/components/siscob/SiscobRep.war], to svmsiscob01 svmsiscob02 .> 
+Task 5 initiated: [Deployer:149026]deploy application SiscobRep on svmsiscob01,svmsiscob02.
+Task 5 completed: [Deployer:149026]deploy application SiscobRep on svmsiscob01,svmsiscob02.
+Target state: deploy completed on Server svmsiscob01
+Target state: deploy completed on Server svmsiscob02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9001 -userconfigfile /opt/apps/deployme/keys/wl9user.secure -userkeyfile /opt/apps/deployme/keys/wl9key.secure -deploy -name CobranzaDespachos -source /opt/apps/corefiles/components/siscob/CobranzaDespachos.war -targets svmsiscob01,svmsiscob02 -stage
+<23/04/2013 10:01:08 AM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, CobranzaDespachos [archive: /opt/apps/corefiles/components/siscob/CobranzaDespachos.war], to svmsiscob01 svmsiscob02 .> 
+Task 6 initiated: [Deployer:149026]deploy application CobranzaDespachos on svmsiscob01,svmsiscob02.
+Task 6 completed: [Deployer:149026]deploy application CobranzaDespachos on svmsiscob01,svmsiscob02.
+Target state: deploy completed on Server svmsiscob01
+Target state: deploy completed on Server svmsiscob02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name Enrollment -source /opt/apps/corefiles/components/loyalty/Enrollment.war -targets ClusterLoyalty -stage
+<Apr 29, 2013 2:47:14 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, Enrollment [archive: /opt/apps/corefiles/components/loyalty/Enrollment.war], to ClusterLoyalty .> 
+Task 0 initiated: [Deployer:149026]deploy application Enrollment on ClusterLoyalty.
+Task 0 deferred: [Deployer:149026]deploy application Enrollment on ClusterLoyalty.
+Target state: deploy deferred on Cluster ClusterLoyalty
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty01'. Deployment is deferred until 'svmloyalty01' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty02'. Deployment is deferred until 'svmloyalty02' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name admin -source /opt/apps/corefiles/components/loyalty/admin.war -targets ClusterLoyalty -stage
+<Apr 29, 2013 2:47:21 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, admin [archive: /opt/apps/corefiles/components/loyalty/admin.war], to ClusterLoyalty .> 
+Task 1 initiated: [Deployer:149026]deploy application admin on ClusterLoyalty.
+Task 1 deferred: [Deployer:149026]deploy application admin on ClusterLoyalty.
+Target state: deploy deferred on Cluster ClusterLoyalty
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty02'. Deployment is deferred until 'svmloyalty02' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty01'. Deployment is deferred until 'svmloyalty01' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name reportes -source /opt/apps/corefiles/components/loyalty/reportes.war -targets ClusterLoyalty -stage
+<Apr 29, 2013 2:47:28 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, reportes [archive: /opt/apps/corefiles/components/loyalty/reportes.war], to ClusterLoyalty .> 
+Task 2 initiated: [Deployer:149026]deploy application reportes on ClusterLoyalty.
+Task 2 deferred: [Deployer:149026]deploy application reportes on ClusterLoyalty.
+Target state: deploy deferred on Cluster ClusterLoyalty
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty02'. Deployment is deferred until 'svmloyalty02' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty01'. Deployment is deferred until 'svmloyalty01' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name consulta_puntos -source /opt/apps/corefiles/components/loyalty/consulta_puntos.war -targets ClusterLoyalty -stage
+<Apr 29, 2013 2:47:34 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, consulta_puntos [archive: /opt/apps/corefiles/components/loyalty/consulta_puntos.war], to ClusterLoyalty .> 
+Task 3 initiated: [Deployer:149026]deploy application consulta_puntos on ClusterLoyalty.
+Task 3 deferred: [Deployer:149026]deploy application consulta_puntos on ClusterLoyalty.
+Target state: deploy deferred on Cluster ClusterLoyalty
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty02'. Deployment is deferred until 'svmloyalty02' becomes available.
+
+java.rmi.RemoteException: [Deployer:149145]Unable to contact 'svmloyalty01'. Deployment is deferred until 'svmloyalty01' becomes available.
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name Enrollment -source /opt/apps/corefiles/components/loyalty/Enrollment.war -targets svmloyalty01,svmloyalty02 -stage
+<Apr 29, 2013 3:18:20 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, Enrollment [archive: /opt/apps/corefiles/components/loyalty/Enrollment.war], to svmloyalty02 svmloyalty01 .> 
+Task 3 initiated: [Deployer:149026]deploy application Enrollment on svmloyalty01,svmloyalty02.
+Task 3 completed: [Deployer:149026]deploy application Enrollment on svmloyalty01,svmloyalty02.
+Target state: deploy completed on Server svmloyalty01
+Target state: deploy completed on Server svmloyalty02
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name admin -source /opt/apps/corefiles/components/loyalty/admin.war -targets svmloyalty01,svmloyalty02 -stage
+<Apr 29, 2013 3:18:30 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, admin [archive: /opt/apps/corefiles/components/loyalty/admin.war], to svmloyalty01 svmloyalty02 .> 
+Task 4 initiated: [Deployer:149026]deploy application admin on svmloyalty01,svmloyalty02.
+Task 4 failed: [Deployer:149026]deploy application admin on svmloyalty01,svmloyalty02.
+Target state: deploy failed on Server svmloyalty01
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+Target state: deploy failed on Server svmloyalty02
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name reportes -source /opt/apps/corefiles/components/loyalty/reportes.war -targets svmloyalty01,svmloyalty02 -stage
+<Apr 29, 2013 3:18:37 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, reportes [archive: /opt/apps/corefiles/components/loyalty/reportes.war], to svmloyalty01 svmloyalty02 .> 
+Task 5 initiated: [Deployer:149026]deploy application reportes on svmloyalty01,svmloyalty02.
+Task 5 failed: [Deployer:149026]deploy application reportes on svmloyalty01,svmloyalty02.
+Target state: deploy failed on Server svmloyalty01
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+Target state: deploy failed on Server svmloyalty02
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name consulta_puntos -source /opt/apps/corefiles/components/loyalty/consulta_puntos.war -targets svmloyalty01,svmloyalty02 -stage
+<Apr 29, 2013 3:18:44 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, consulta_puntos [archive: /opt/apps/corefiles/components/loyalty/consulta_puntos.war], to svmloyalty02 svmloyalty01 .> 
+Task 6 initiated: [Deployer:149026]deploy application consulta_puntos on svmloyalty01,svmloyalty02.
+Task 6 failed: [Deployer:149026]deploy application consulta_puntos on svmloyalty01,svmloyalty02.
+Target state: deploy failed on Server svmloyalty01
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+Target state: deploy failed on Server svmloyalty02
+java.lang.ClassNotFoundException: com.cpssite.nlr.glasses.listeners.LoggerListener
+
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -undeploy -name NOEReports
+<May 27, 2013 4:26:48 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating undeploy operation for application, NOEReports [archive: null], to configured targets.> 
+Task 16 initiated: [Deployer:149026]remove application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 16 completed: [Deployer:149026]remove application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: undeploy completed on Server svmnoe04
+Target state: undeploy completed on Server svmnoe02
+Target state: undeploy completed on Server svmnoe03
+Target state: undeploy completed on Server svmnoe01
+
+weblogic.Deployer invoked with options:  -adminurl t3://10.103.12.15:9002 -userconfigfile /opt/apps/deployme/keys/wl10user.secure -userkeyfile /opt/apps/deployme/keys/wl10key.secure -deploy -name NOEReports -source /opt/apps/corefiles/noe/201305271533/NOEReports.war -targets svmnoe01,svmnoe02,svmnoe03,svmnoe04 -stage
+<May 27, 2013 4:27:57 PM CDT> <Info> <J2EE Deployment SPI> <BEA-260121> <Initiating deploy operation for application, NOEReports [archive: /opt/apps/corefiles/noe/201305271533/NOEReports.war], to svmnoe01 svmnoe04 svmnoe02 svmnoe03 .> 
+Task 17 initiated: [Deployer:149026]deploy application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Task 17 completed: [Deployer:149026]deploy application NOEReports on svmnoe04,svmnoe02,svmnoe03,svmnoe01.
+Target state: deploy completed on Server svmnoe04
+Target state: deploy completed on Server svmnoe02
+Target state: deploy completed on Server svmnoe03
+Target state: deploy completed on Server svmnoe01
+

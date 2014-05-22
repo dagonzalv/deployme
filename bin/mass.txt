@@ -1,0 +1,14 @@
+wl10 deploy NexInde 10.103.12.15:9002 /opt/apps/corefiles/components/noe/NexInde.war
+wl10 deploy NOEMovilServices 10.103.12.15:9002 /opt/apps/corefiles/components/noe/NOEMovilServices.war
+wl10 deploy NOEMovil 10.103.12.15:9002 /opt/apps/corefiles/components/noe/NOEMovil.war
+wl10 deploy NOEReports 10.103.12.15:9002 /opt/apps/corefiles/components/noe/NOEReports.war
+wl10 deploy RenautWeb 10.103.12.15:9002 /opt/apps/corefiles/components/noe/RenautWeb.war
+wl10 deploy scv 10.103.12.15:9002 /opt/apps/corefiles/components/noe/scv.war
+wl10 deploy seguridad 10.103.12.15:9002 /opt/apps/corefiles/components/noe/seguridad.ear
+wl10 deploy ServiciosASP 10.103.12.15:9002 /opt/apps/corefiles/components/noe/ServiciosASP.war
+wl10 deploy ServiciosBC 10.103.12.15:9002 /opt/apps/corefiles/components/noe/ServiciosBC.war
+wl10 deploy ServiciosOE 10.103.12.15:9002 /opt/apps/corefiles/components/noe/ServiciosOE.war
+wl10 deploy Siven 10.103.12.15:9002 /opt/apps/corefiles/components/noe/Siven.war
+wl10 deploy InvestigacionCampo 10.103.12.15:9002 /opt/apps/corefiles/components/noe/InvestigacionCampo.war
+wl10 deploy CPCWeb 10.103.12.15:9002 /opt/apps/corefiles/components/noe/CPCWeb.war
+

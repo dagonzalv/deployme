@@ -1,0 +1,4 @@
+wl10 deploy Enrollment 10.103.12.15:9002 /opt/apps/corefiles/components/loyalty/Enrollment.war
+wl10 deploy admin 10.103.12.15:9002 /opt/apps/corefiles/components/loyalty/admin.war
+wl10 deploy reportes 10.103.12.15:9002 /opt/apps/corefiles/components/loyalty/reportes.war
+wl10 deploy consulta_puntos 10.103.12.15:9002 /opt/apps/corefiles/components/loyalty/consulta_puntos.war
