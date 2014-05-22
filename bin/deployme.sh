@@ -244,3 +244,5 @@ if [ "${WL}" = "wl10" ]
                 fi
        done
 fi
+
+#Comenzará la nueva version 1.6
